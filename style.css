@@ -1,10 +1,11 @@
 :root {
-  --bg-gradient: linear-gradient(135deg, #1A1A2E, #162447); /* deep charcoal gradient */
-  --card-bg: #FFFFFF;           /* cards */
+  --bg-gradient: linear-gradient(135deg, #1A1A2E, #162447); /* dark hero bg */
+  --card-bg: #FFFFFF;           /* cards background */
   --accent: #FF6B6B;            /* coral accent */
   --accent2: #FFD166;           /* gold accent */
-  --text: #000000;              /* main text dark for visibility */
-  --subtext: #555555;           /* muted text */
+  --text-dark: #000000;         /* dark text for light background */
+  --text-light: #FFFFFF;        /* white text for dark background */
+  --subtext: #B0B0B0;           /* muted text */
 }
 
 /* ===== Global ===== */
@@ -18,7 +19,7 @@
 
 body {
   background: var(--bg-gradient);
-  color: var(--text);
+  color: var(--text-light);
   line-height: 1.6;
 }
 
@@ -42,7 +43,7 @@ header {
 }
 
 nav a {
-  color: #fff; /* white text for header links */
+  color: var(--text-light);
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -104,7 +105,7 @@ nav a:hover::after {
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #fff; /* visible on gradient background */
+  color: var(--text-light);
   opacity: 0;
   transform: translateY(25px);
   animation: fadeUp 0.8s ease forwards 0.2s;
@@ -112,7 +113,7 @@ nav a:hover::after {
 
 #hero p {
   font-size: 20px;
-  color: #eee;
+  color: var(--subtext);
   margin-bottom: 25px;
   opacity: 0;
   transform: translateY(25px);
@@ -124,7 +125,7 @@ nav a:hover::after {
   border-radius: 8px;
   border: none;
   background: var(--accent);
-  color: #fff;
+  color: var(--text-light);
   font-weight: 500;
   cursor: pointer;
   opacity: 0;
@@ -171,12 +172,12 @@ section {
   padding: 25px;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  color: #000;
+  color: var(--text-dark); /* black on white card */
 }
 
 .card h3,
 .card p {
-  color: #000;
+  color: var(--text-dark);
   transition: color 0.3s ease;
 }
 
@@ -188,7 +189,7 @@ section {
 
 .card:hover h3,
 .card:hover p {
-  color: #fff;
+  color: var(--text-light);
 }
 
 /* ===== Skills ===== */
@@ -198,15 +199,15 @@ section {
   margin: 10px;
   border-radius: 20px;
   border: 1px solid var(--accent);
-  color: #000;
+  color: var(--text-dark);
   cursor: pointer;
   transition: 0.3s ease, transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-  background: #fff;
+  background: var(--card-bg);
 }
 
 .skills-list li:hover {
   background: linear-gradient(135deg, #FF6B6B, #FFD166);
-  color: #fff;
+  color: var(--text-light);
   transform: translateY(-5px);
 }
 
@@ -225,7 +226,7 @@ section {
   border: 1px solid #d1d5db;
   outline: none;
   background: #fff;
-  color: #000; /* dark text for visibility */
+  color: var(--text-dark);
   transition: 0.3s ease, transform 0.2s ease;
 }
 
@@ -239,7 +240,7 @@ section {
   border: none;
   border-radius: 8px;
   background: var(--accent);
-  color: #fff;
+  color: var(--text-light);
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
