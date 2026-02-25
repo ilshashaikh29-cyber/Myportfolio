@@ -178,7 +178,7 @@ h2:hover::after {
     background: var(--secondary);
     padding: 15px 30px;
     border-radius: 50px;
-    color: grey;
+    color:(--text);
     font-weight: 600;
     transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -188,10 +188,7 @@ h2:hover::after {
     background: var(--primary);
     color: var(--highlight);
     transform: translateY(-5px);
-}
-
-/* ===== PROJECT CARDS ===== */
-/* ===== PROJECT CARDS ===== */
+}/* ===== PROJECT CARDS ===== */
 .project-grid {
     display: flex;
     justify-content: center;
@@ -200,47 +197,36 @@ h2:hover::after {
 }
 
 .card {
-    background: var(--secondary);
+    background: #ffffff; /* Clean white background */
     padding: 30px;
-    border-radius: 10px;
-    width: 250px;
+    border-radius: 12px;
+    width: 260px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
     cursor: pointer;
-    color: black; /* Set the font color of the text to black */
-    border: 1px solid transparent;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Heading */
 .card h3 {
     font-size: 20px;
     font-weight: 600;
-    color: black;  /* Heading font color black */
+    color: var(--primary); /* Dark blue elegant */
     margin-bottom: 10px;
 }
 
+/* Paragraph */
 .card p {
     font-size: 16px;
-    color: black;  /* Paragraph font color black */
+    color: #555555; /* Soft professional grey */
 }
 
-/* Hover effects */
+/* Hover Effect */
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--highlight);
-}
-
-.card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 16px;
-    color: var(--text);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(29, 53, 87, 0.15);
+    border: 1px solid var(--highlight);
 }
 
 /* ===== BUTTON STYLING ===== */
@@ -433,6 +419,7 @@ h2:hover::after {
         height: 140px;
     }
 }
+
 
 
 
