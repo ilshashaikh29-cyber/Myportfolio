@@ -165,30 +165,29 @@ h2:hover::after {
 }
 
 /* ===== SKILLS LIST ===== */
+/* SKILLS */
 .skils-list {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-
+ 
 .skils-list li {
-    background: var(--secondary);
-    padding: 15px 30px;
-    border-radius: 50px;
-    color: var(--accent);
-    font-weight: 600;
-    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+    background: #1e293b;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s ease;
     cursor: pointer;
 }
 
 .skils-list li:hover {
-    background: var(--primary);
-    color: var(--highlight);
+    background: #38bdf8;
+    color: #0f172a;
     transform: translateY(-5px);
 }
+
+
 
 /* ===== PROJECT CARDS ===== */
 /* ===== PROJECT CARDS ===== */
@@ -360,6 +359,7 @@ h2:hover::after {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
