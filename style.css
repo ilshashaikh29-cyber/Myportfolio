@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-  --bg: #0f172a;
-  --section: #1e293b;
-  --accent: #14b8a6;        /* Muted teal */
-  --accent-soft: #0d9488;
-  --text: #f1f5f9;
-  --muted: #94a3b8;
-  --border: #334155;
+  --bg: #121212;
+  --section: #1e1e1e;
+  --accent: #7c3aed;      /* Deep corporate violet */
+  --accent-soft: #6d28d9;
+  --text: #f3f4f6;
+  --muted: #a1a1aa;
+  --border: #2e2e2e;
 }
 
 * {
@@ -24,18 +26,19 @@ body {
 
 /* ===== Header ===== */
 header {
-  transition: 0.3s ease;
-}
-
-header.scrolled {
-  padding: 12px 8%;
-  background: rgba(15, 23, 42, 0.98);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: var(--section);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
 }
 
 .logo {
-  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 /* ===== Navbar ===== */
@@ -60,7 +63,7 @@ nav a::after {
   width: 0%;
   height: 2px;
   background: var(--accent);
-  transition: width 0.3s ease;
+  transition: 0.3s ease;
 }
 
 nav a:hover::after {
@@ -70,13 +73,13 @@ nav a:hover::after {
 /* ===== Sections ===== */
 section {
   padding: 90px 8%;
-  animation: fadeUp 0.8s ease forwards;
+  animation: fadeUp 0.6s ease;
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
@@ -85,28 +88,16 @@ section {
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
 h2 {
   font-size: 24px;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
+  margin-bottom: 25px;
+  color: var(--accent);
 }
 
-h2::after {
-  content: "";
-  width: 40%;
-  height: 3px;
-  background: var(--accent);
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-}
-
-/* ===== Hero ===== */
 #hero {
   text-align: center;
   padding-top: 120px;
@@ -134,7 +125,6 @@ h2::after {
 /* ===== Skills ===== */
 .skils-list {
   list-style: none;
-  margin-top: 20px;
 }
 
 .skils-list li {
@@ -143,7 +133,7 @@ h2::after {
   margin: 8px 8px 0 0;
   background: var(--section);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 14px;
   transition: 0.3s ease;
 }
@@ -163,7 +153,7 @@ h2::after {
 .card {
   background: var(--section);
   padding: 25px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--border);
   transition: 0.3s ease;
 }
@@ -171,10 +161,6 @@ h2::after {
 .card:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
-}
-
-.card h3 {
-  margin-bottom: 10px;
 }
 
 .card p {
@@ -188,7 +174,7 @@ h2::after {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border-radius: 6px;
+  border-radius: 5px;
   border: 1px solid var(--border);
   background: var(--section);
   color: var(--text);
@@ -203,7 +189,7 @@ h2::after {
 
 .contact-form button {
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 5px;
   border: none;
   background: var(--accent);
   color: white;
@@ -243,4 +229,3 @@ h2::after {
     font-size: 20px;
   }
 }
-
