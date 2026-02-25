@@ -200,35 +200,35 @@ h2:hover::after {
 }
 
 .card {
-    background: #F5F5F5; /* Elegant soft light gray */
+    background: #ffffff; 
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     width: 250px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     color: black;
-    border: 1px solid transparent;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .card h3 {
     font-size: 20px;
     font-weight: 600;
-    color: black;  /* Heading font color black */
+    color: var(--primary);  /* Heading font color black */
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 16px;
-    color: black;  /* Paragraph font color black */
+    color: var(--primary);  /* Paragraph font color black */
 }
 
 /* Hover effects */
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--highlight);
+    box-shadow: 0 12px 30px rgba(29 ,53, 87, 0.15);
+    border: 1px solid var(--highlight);
 }
 
 .card h3 {
@@ -340,4 +340,5 @@ h2:hover::after {
     outline: none;
 
 }
+
 
