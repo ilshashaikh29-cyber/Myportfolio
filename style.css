@@ -193,22 +193,25 @@ section {
 }
 
 /* ===== Skills ===== */
+/* ===== Skills ===== */
 .skills-list li {
   display: inline-block;
   padding: 10px 20px;
   margin: 10px;
   border-radius: 20px;
   border: 1px solid var(--accent);
-  color: var(--text-dark);
+  color: var(--text-dark);        /* black text normally */
+  background: var(--card-bg);     /* white bg */
   cursor: pointer;
-  transition: 0.3s ease, transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-  background: var(--card-bg);
+  transition: 0.3s ease, transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect */
 .skills-list li:hover {
-  background: linear-gradient(135deg, #FF6B6B, #FFD166);
-  color: var(--text-light);
-  transform: translateY(-5px);
+  background: linear-gradient(135deg, #FF6B6B, #FFD166); /* gradient bg */
+  color: var(--text-light);                              /* text white on hover */
+  transform: translateY(-5px);                            /* lift up effect */
+  box-shadow: 0 8px 20px rgba(255,107,107,0.3);         /* shadow */
 }
 
 /* ===== Contact Form ===== */
@@ -275,3 +278,4 @@ section {
     height: 140px;
   }
 }
+
