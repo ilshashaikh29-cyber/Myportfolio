@@ -67,6 +67,8 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   padding: 0 10%;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
@@ -164,7 +166,24 @@ section {
     font-size: 32px;
   }
 
+  .profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+/* Smooth Hover Effect */
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(20, 184, 166, 0.4);
+}
+
   .hero p {
     font-size: 16px;
   }
 }
+
