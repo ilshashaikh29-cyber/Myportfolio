@@ -297,18 +297,20 @@ h2:hover::after {
 /* ===== FORM INPUTS ===== */
 .contact-form input,
 .contact-form textarea {
-    background: var(--secondary);
-    border: 1px solid #2C3E50;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
     padding: 12px 20px;
-    border-radius: 6px;
+    border-radius: 8px;
     color: black;  /* Input text color set to black */
     width: 100%;
     max-width: 500px;
     margin-bottom: 20px;
     font-size: 16px;
+    transition: all o.3s ease;
 }
 
 /* ===== BUTTON STYLING ===== */
+
 /* ===== BUTTON STYLING ===== */
 .contact-form button {
     background: var(--highlight);
@@ -336,9 +338,10 @@ h2:hover::after {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: var(--highlight);
-    box-shadow: 0 0 0 2px rgba(163, 194, 228, 0.3);
+    box-shadow: 0 0 0 3px rgba(168, 218, 220, 0.3);
     outline: none;
 
 }
+
 
 
