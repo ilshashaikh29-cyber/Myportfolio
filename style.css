@@ -133,6 +133,24 @@ nav a:hover::after {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(255,107,107,0.4);
 }
+#hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 /* Fade Up Animation */
 @keyframes fadeUp {
@@ -265,3 +283,4 @@ section {
     height: 140px;
   }
 }
+
